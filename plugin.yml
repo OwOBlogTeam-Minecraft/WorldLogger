@@ -1,0 +1,18 @@
+name: WorldLogger
+main: WorldLogger\Main
+version: 2.2.0
+api: [3.0.0-ALPHA12]
+load: STARTUP
+author: Zhy,Teaclon
+commands:
+ check:
+  description: The main command of WorldLogger
+  usage: /check <i | n> <xxx>
+  permission: WorldLogger.command.check
+permissions:
+ WorldLogger.*:
+  description: "这代表只有OP有这个权限"
+  default: op
+ WorldLogger.command.check:
+  description: "这代表普通玩家也能使用这个指令"
+  default: true
